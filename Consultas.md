@@ -285,8 +285,11 @@ GROUP BY jobTitle;
 
 11. **Encontrar el promedio de la cantidad de productos ordenados por cada cliente:**
 
-    ```
-    
+    ```sql
+    SELECT customerNumber, AVG(quantityOrdered) AS promedio_productos_ordenados
+    FROM orderdetails
+    JOIN orders ON orderdetails.orderNumber = orders.orderNumber
+    GROUP BY customerNumber;
     ```
 
 12. **Calcular el total de ventas realizadas en cada país:**
