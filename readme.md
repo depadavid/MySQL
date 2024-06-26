@@ -62,7 +62,8 @@
 10. **Buscar películas con un actor con id_actor 1:**
 
    ```javascript
-   
+   db.movies.find({
+     "character.id_actor": 1})
    ```
 
 11. **Buscar películas con un personaje principal apodado "Cobb":**
