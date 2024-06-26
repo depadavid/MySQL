@@ -373,5 +373,8 @@ GROUP BY jobTitle;
 20. **Encontrar el promedio del precio de venta (priceEach) de los productos por línea de productos:**
 
     ```sql
-    
+    SELECT productLine, AVG(priceEach) AS promedio_precio_venta
+    FROM products
+    JOIN orderdetails ON products.productCode = orderdetails.productCode
+    GROUP BY productLine;
     ```
