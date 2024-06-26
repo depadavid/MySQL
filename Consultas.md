@@ -173,7 +173,8 @@ WHERE officeCode = 1;
 8. **Encontrar el precio total de todos los productos:**
 
    ```sql
-   
+   SELECT SUM(buyPrice * quantityInStock) AS precio_total_productos
+   FROM products;
    ```
 
 9. **Calcular el promedio del precio sugerido (MSRP) de los productos:**
