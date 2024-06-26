@@ -344,7 +344,13 @@ GROUP BY jobTitle;
 17. **Encontrar el total de ventas realizadas por cada oficina:**
 
     ```sql
-    
+    SELECT offices.officeCode, SUM(orderdetails.quantityOrdered * orderdetails.priceEach) AS total_ventas
+    FROM orderdetails
+    JOIN orders ON orderdetails.orderNumber = orders.orderNumber
+    JOIN customers ON orders.customerNumber = customers.customerNumber
+    JOIN employees ON customers.salesRepEmployeeNumber = employees.employeeNumber
+    JOIN offices ON employees.officeCode = offices.officeCode
+    GROUP BY offices.officeCode;
     ```
 
 18. **Calcular la cantidad media de productos pedidos por cada cliente:**
