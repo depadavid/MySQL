@@ -266,8 +266,12 @@ GROUP BY jobTitle;
 
 9. **Calcular el total de órdenes gestionadas por cada empleado:**
 
-   ```
-   
+   ```sql
+   SELECT employees.employeeNumber, COUNT(*) AS total_ordenes_gestionadas
+   FROM orders
+   JOIN customers ON orders.customerNumber = customers.customerNumber
+   JOIN employees ON customers.salesRepEmployeeNumber = employees.employeeNumber
+   GROUP BY employees.employeeNumber;
    ```
 
 10. **Obtener la cantidad total de productos vendidos por cada línea de productos:**
