@@ -221,7 +221,10 @@ GROUP BY jobTitle;
 4. **Encontrar la cantidad total de productos pedidos por cada cliente:**
 
    ```sql
-   
+   SELECT customerNumber, SUM(quantityOrdered) AS total_productos_pedidos
+   FROM orderdetails
+   JOIN orders ON orderdetails.orderNumber = orders.orderNumber
+   GROUP BY customerNumber;
    ```
 
 5. **Calcular el total de ventas (cantidad ordenada por precio cada uno) por cada cliente:**
