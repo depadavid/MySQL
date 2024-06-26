@@ -7,7 +7,7 @@
 2. **Buscar películas con más de 200 copias en formato "Bluray":**
 
    ``` javascript
-   
+   db.movies.find({ "format": { $elemMatch: { "name": "Bluray", "copies": { $gt: 200 } } } })
    ```
 
 3. **Buscar películas donde el valor del formato "dvd" sea menor que 10:**
