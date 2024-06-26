@@ -45,7 +45,11 @@
 8. **Buscar películas con un rol principal llamado "Miguel":**
 
    ``` javascript
-   
+   db.movies.find({
+     "character": {
+       $elemMatch: {
+         "rol": "principal",
+         "apodo": "Miguel"    }  }})
    ```
 
 9. **Buscar películas que tengan al menos un formato con más de 100 copias:**
