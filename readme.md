@@ -88,7 +88,11 @@ db.movies.find({
 13. **Buscar películas donde el valor del formato "dvd" sea menor que 10:**
 
    ``` javascript
-   
+   db.movies.find({
+     "format": {
+       $elemMatch: {
+         "name": "dvd",
+         "value": { $lt: 10 }    }  }})
    ```
 
 14. **Buscar películas con un personaje secundario apodado "Arthur":**
