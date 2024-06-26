@@ -294,8 +294,12 @@ GROUP BY jobTitle;
 
 12. **Calcular el total de ventas realizadas en cada país:**
 
-    ```
-    
+    ```sql
+    SELECT customers.country, SUM(orderdetails.quantityOrdered * orderdetails.priceEach) AS total_ventas
+    FROM orderdetails
+    JOIN orders ON orderdetails.orderNumber = orders.orderNumber
+    JOIN customers ON orders.customerNumber = customers.customerNumber
+    GROUP BY customers.country;
     ```
 
 13. **Obtener el promedio del precio de compra de los productos por línea de productos:**
