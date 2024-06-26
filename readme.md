@@ -69,7 +69,11 @@
 11. **Buscar películas con un personaje principal apodado "Cobb":**
 
    ``` javascript
-   
+   db.movies.find({
+     "character": {
+       $elemMatch: {
+         "rol": "principal",
+         "apodo": "Cobb"    }  }})
    ```
 12. **Buscar películas con más de 200 copias en formato "Bluray":**
 
