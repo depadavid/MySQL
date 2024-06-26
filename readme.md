@@ -108,5 +108,9 @@ db.movies.find({
 15. **Buscar películas con un rol principal y un apodo "Miguel":**
 
    ``` javascript
-   
+   db.movies.find({
+     "character": {
+       $elemMatch: {
+         "rol": "principal",
+         "apodo": "Miguel"    }  }})
    ```
