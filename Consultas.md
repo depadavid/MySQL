@@ -130,7 +130,8 @@ WHERE officeCode = 1;
 2. **Calcular el total de productos en stock:**
 
    ```sql
-   
+   SELECT SUM(quantityInStock) AS total_productos_en_stock
+   FROM products;
    ```
 
 3. **Encontrar el precio medio de compra de todos los productos:**
