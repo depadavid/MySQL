@@ -55,7 +55,8 @@
 9. **Buscar películas que tengan al menos un formato con más de 100 copias:**
 
    ``` javascript
-   
+   db.movies.find({
+     "format.copies": { $gt: 100 }})
    ```
 
 10. **Buscar películas con un actor con id_actor 1:**
