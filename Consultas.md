@@ -159,7 +159,8 @@ WHERE officeCode = 1;
 6. **Obtener la cantidad total de empleados:**
 
    ```sql
-   
+   SELECT COUNT(*) AS total_empleados
+   FROM employees;
    ```
 
 7. **Calcular la cantidad media de productos pedidos en las órdenes:**
