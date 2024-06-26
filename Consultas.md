@@ -180,13 +180,16 @@ WHERE officeCode = 1;
 9. **Calcular el promedio del precio sugerido (MSRP) de los productos:**
 
    ```sql
-   
+   SELECT AVG(MSRP) AS promedio_precio_sugerido
+   FROM products;
    ```
 
 10. **Contar la cantidad de empleados por título de trabajo:**
 
 ```sql
-
+SELECT jobTitle, COUNT(*) AS cantidad_empleados
+FROM employees
+GROUP BY jobTitle;
 ```
 
 ### Consultas de múltiples tablas
