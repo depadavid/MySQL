@@ -27,14 +27,13 @@
 
    ``` javascript
    db.movies.find({
-     "character.id_actor": { $all: [2, 3] }
-   })  
+     "character.id_actor": { $all: [2, 3] }})  
    ```
 
 6. **Buscar películas que tengan el formato "Bluray":**
 
    ``` javascript
-    
+   db.movies.find({ "format.name": "Bluray" })
    ```
 
 7. **Buscar películas con el género "Ciencia Ficción":**
