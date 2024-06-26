@@ -123,7 +123,8 @@ WHERE officeCode = 1;
 1. **Obtener el promedio del límite de crédito de todos los clientes:**
 
    ```sql
-   
+   SELECT AVG(creditLimit) AS promedio_credito
+   FROM customers;
    ```
 
 2. **Calcular el total de productos en stock:**
