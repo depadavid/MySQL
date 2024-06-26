@@ -213,7 +213,9 @@ GROUP BY jobTitle;
 3. **Calcular el total de órdenes realizadas por cada cliente:**
 
    ```sql
-   
+   SELECT customerNumber, COUNT(*) AS total_ordenes
+   FROM orders
+   GROUP BY customerNumber;
    ```
 
 4. **Encontrar la cantidad total de productos pedidos por cada cliente:**
