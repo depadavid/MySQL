@@ -304,13 +304,21 @@ GROUP BY jobTitle;
 
 13. **Obtener el promedio del precio de compra de los productos por línea de productos:**
 
-    ```
-    
+    ```sql
+    SELECT productLine, AVG(buyPrice) AS promedio_precio_compra
+    FROM products
+    GROUP BY productLine;
     ```
 
 14. **Encontrar la cantidad total de productos vendidos por cada vendedor:**
 
     ```sql
+    SELECT employees.employeeNumber, SUM(orderdetails.quantityOrdered) AS total_productos_vendidos
+    FROM orderdetails
+    JOIN orders ON orderdetails.orderNumber = orders.orderNumber
+    JOIN customers ON orders.customerNumber = customers.customerNumber
+    JOIN employees ON customers.salesRepEmployeeNumber = employees.employeeNumber
+    GROUP BY employees.employeeNumber;
     
     ```
 
