@@ -197,7 +197,9 @@ GROUP BY jobTitle;
 1. **Calcular el total de pagos recibidos por cada cliente:**
 
    ```sql
-   
+   SELECT customerNumber, SUM(amount) AS total_pagos_recibidos
+   FROM payments
+   GROUP BY customerNumber;
    ```
 
 2. **Obtener el promedio del límite de crédito de los clientes por país:**
