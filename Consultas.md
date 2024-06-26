@@ -356,7 +356,10 @@ GROUP BY jobTitle;
 18. **Calcular la cantidad media de productos pedidos por cada cliente:**
 
     ```sql
-    
+    SELECT customerNumber, AVG(quantityOrdered) AS promedio_productos_pedidos
+    FROM orderdetails
+    JOIN orders ON orderdetails.orderNumber = orders.orderNumber
+    GROUP BY customerNumber;
     ```
 
 19. **Obtener el total de pagos realizados en cada año:**
