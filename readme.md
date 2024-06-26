@@ -98,7 +98,11 @@ db.movies.find({
 14. **Buscar películas con un personaje secundario apodado "Arthur":**
 
    ``` javascript
-   
+   db.movies.find({
+     "character": {
+       $elemMatch: {
+         "rol": "secundario",
+         "apodo": "Arthur"    }  }})
    ```
 
 15. **Buscar películas con un rol principal y un apodo "Miguel":**
