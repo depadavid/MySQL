@@ -246,8 +246,11 @@ GROUP BY jobTitle;
 
 7. **Calcular el total de pagos recibidos por cada país:**
 
-   ```
-   
+   ```sql
+   SELECT customers.country, SUM(payments.amount) AS total_pagos_recibidos
+   FROM payments
+   JOIN customers ON payments.customerNumber = customers.customerNumber
+   GROUP BY customers.country;
    ```
 
 8. **Encontrar el promedio de ventas (cantidad ordenada por precio cada uno) por cada empleado:**
