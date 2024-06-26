@@ -276,8 +276,11 @@ GROUP BY jobTitle;
 
 10. **Obtener la cantidad total de productos vendidos por cada línea de productos:**
 
-    ```
-    
+    ```sql
+    SELECT productLine, SUM(quantityOrdered) AS total_productos_vendidos
+    FROM orderdetails
+    JOIN products ON orderdetails.productCode = products.productCode
+    GROUP BY productLine;
     ```
 
 11. **Encontrar el promedio de la cantidad de productos ordenados por cada cliente:**
