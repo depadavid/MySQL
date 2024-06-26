@@ -205,7 +205,9 @@ GROUP BY jobTitle;
 2. **Obtener el promedio del límite de crédito de los clientes por país:**
 
    ```sql
-   
+   SELECT country, AVG(creditLimit) AS promedio_limite_credito
+   FROM customers
+   GROUP BY country;
    ```
 
 3. **Calcular el total de órdenes realizadas por cada cliente:**
