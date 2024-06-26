@@ -166,7 +166,8 @@ WHERE officeCode = 1;
 7. **Calcular la cantidad media de productos pedidos en las órdenes:**
 
    ```sql
-   
+   SELECT AVG(quantityOrdered) AS cantidad_media_productos_pedidos
+   FROM orderdetails;
    ```
 
 8. **Encontrar el precio total de todos los productos:**
