@@ -152,7 +152,8 @@ WHERE officeCode = 1;
 5. **Calcular el total de pagos recibidos:**
 
    ```sql
-   
+   SELECT SUM(amount) AS total_pagos_recibidos
+   FROM payments;
    ```
 
 6. **Obtener la cantidad total de empleados:**
