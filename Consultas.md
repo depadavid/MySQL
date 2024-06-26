@@ -365,7 +365,9 @@ GROUP BY jobTitle;
 19. **Obtener el total de pagos realizados en cada año:**
 
     ```sql
-    
+    SELECT YEAR(paymentDate) AS año, SUM(amount) AS total_pagos
+    FROM payments
+    GROUP BY YEAR(paymentDate);
     ```
 
 20. **Encontrar el promedio del precio de venta (priceEach) de los productos por línea de productos:**
