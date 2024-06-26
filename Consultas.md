@@ -335,7 +335,10 @@ GROUP BY jobTitle;
 16. **Obtener el promedio del límite de crédito de los clientes atendidos por cada vendedor:**
 
     ```sql
-    
+    SELECT employees.employeeNumber, AVG(customers.creditLimit) AS promedio_limite_credito
+    FROM customers
+    JOIN employees ON customers.salesRepEmployeeNumber = employees.employeeNumber
+    GROUP BY employees.employeeNumber;
     ```
 
 17. **Encontrar el total de ventas realizadas por cada oficina:**
