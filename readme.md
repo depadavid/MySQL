@@ -26,7 +26,9 @@
 5. **Buscar películas con actores de id 2 y 3:**
 
    ``` javascript
-    
+   db.movies.find({
+     "character.id_actor": { $all: [2, 3] }
+   })  
    ```
 
 6. **Buscar películas que tengan el formato "Bluray":**
