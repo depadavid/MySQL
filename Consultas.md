@@ -325,7 +325,11 @@ GROUP BY jobTitle;
 15. **Calcular el total de pagos recibidos por cada vendedor:**
 
     ```sql
-    
+    SELECT employees.employeeNumber, SUM(payments.amount) AS total_pagos_recibidos
+    FROM payments
+    JOIN customers ON payments.customerNumber = customers.customerNumber
+    JOIN employees ON customers.salesRepEmployeeNumber = employees.employeeNumber
+    GROUP BY employees.employeeNumber;
     ```
 
 16. **Obtener el promedio del límite de crédito de los clientes atendidos por cada vendedor:**
