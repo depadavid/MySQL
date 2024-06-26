@@ -39,7 +39,7 @@
 7. **Buscar películas con el género "Ciencia Ficción":**
 
    ``` javascript
-   
+   db.movies.find({ genre: "Ciencia Ficción" })
    ```
 
 8. **Buscar películas con un rol principal llamado "Miguel":**
