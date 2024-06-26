@@ -1,0 +1,88 @@
+1. **Buscar películas del género "Accion":**
+
+   ``` javascript
+
+   ```
+
+2. **Buscar películas con más de 200 copias en formato "Bluray":**
+
+   ``` javascript
+
+   ```
+
+3. **Buscar películas donde el valor del formato "dvd" sea menor que 10:**
+
+   ``` javascript
+   
+    ```
+
+4. **Buscar películas con un personaje apodado "Cobb":**
+
+   ``` javascript
+  
+   ```
+
+5. **Buscar películas con actores de id 2 y 3:**
+
+   ``` javascript
+  
+   ```
+
+6. **Buscar películas que tengan el formato "Bluray":**
+
+   ``` javascript
+  
+   ```
+
+7. **Buscar películas con el género "Ciencia Ficción":**
+
+   ``` javascript
+   
+   ```
+
+8. **Buscar películas con un rol principal llamado "Miguel":**
+
+   ``` javascript
+   
+   ```
+
+9. **Buscar películas que tengan al menos un formato con más de 100 copias:**
+
+   ``` javascript
+   
+   ```
+
+10. **Buscar películas con un actor con id_actor 1:**
+
+   ```javascript
+   
+   ```
+    
+11. **Buscar películas con un personaje principal apodado "Cobb":**
+
+   ``` javascript
+   
+   ```
+12. **Buscar películas con más de 200 copias en formato "Bluray":**
+
+   ``` javascript
+  
+   ```
+
+13. **Buscar películas donde el valor del formato "dvd" sea menor que 10:**
+
+   ``` javascript
+   
+   ```
+
+14. **Buscar películas con un personaje secundario apodado "Arthur":**
+
+   ``` javascript
+   
+   ```
+
+15. **Buscar películas con un rol principal y un apodo "Miguel":**
+
+   ``` javascript
+   
+   ```
