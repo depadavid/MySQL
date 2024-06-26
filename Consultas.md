@@ -255,8 +255,13 @@ GROUP BY jobTitle;
 
 8. **Encontrar el promedio de ventas (cantidad ordenada por precio cada uno) por cada empleado:**
 
-   ```
-   
+   ```sql
+   SELECT employees.employeeNumber, AVG(orderdetails.quantityOrdered * orderdetails.priceEach) AS promedio_ventas
+   FROM orderdetails
+   JOIN orders ON orderdetails.orderNumber = orders.orderNumber
+   JOIN customers ON orders.customerNumber = customers.customerNumber
+   JOIN employees ON customers.salesRepEmployeeNumber = employees.employeeNumber
+   GROUP BY employees.employeeNumber;
    ```
 
 9. **Calcular el total de órdenes gestionadas por cada empleado:**
