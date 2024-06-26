@@ -137,13 +137,16 @@ WHERE officeCode = 1;
 3. **Encontrar el precio medio de compra de todos los productos:**
 
    ```sql
-   
+   SELECT AVG(buyPrice) AS precio_medio_compra
+   FROM products;
    ```
 
 4. **Contar la cantidad de oficinas en cada país:**
 
    ```sql
-   
+   SELECT country, COUNT(*) AS cantidad_oficinas
+   FROM offices
+   GROUP BY country;
    ```
 
 5. **Calcular el total de pagos recibidos:**
