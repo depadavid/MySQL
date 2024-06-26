@@ -229,8 +229,11 @@ GROUP BY jobTitle;
 
 5. **Calcular el total de ventas (cantidad ordenada por precio cada uno) por cada cliente:**
 
-   ```
-   
+   ```sql
+   SELECT orders.customerNumber, SUM(orderdetails.quantityOrdered * orderdetails.priceEach) AS total_ventas
+   FROM orderdetails
+   JOIN orders ON orderdetails.orderNumber = orders.orderNumber
+   GROUP BY orders.customerNumber;
    ```
 
 6. **Obtener el promedio de la cantidad de productos en stock por línea de productos:**
