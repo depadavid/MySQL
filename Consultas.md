@@ -238,8 +238,10 @@ GROUP BY jobTitle;
 
 6. **Obtener el promedio de la cantidad de productos en stock por línea de productos:**
 
-   ```
-   
+   ```sql
+   SELECT productLine, AVG(quantityInStock) AS promedio_cantidad_en_stock
+   FROM products
+   GROUP BY productLine;
    ```
 
 7. **Calcular el total de pagos recibidos por cada país:**
