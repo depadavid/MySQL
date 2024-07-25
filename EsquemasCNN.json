@@ -1,0 +1,129 @@
+// noticia
+
+{
+  $jsonSchema: {
+    required: [
+      'title',
+      'body',
+      'date',
+      'tags',
+      'id_noticia'
+    ],
+    properties: {
+      title: {
+        bsonType: 'string'
+      },
+      body: {
+        bsonType: 'string'
+      },
+      date: {
+        bsonType: 'string'
+      },
+      tags: {
+        bsonType: 'array',
+        items: {
+          bsonType: 'string'
+        }
+      },
+      id_noticia: {
+        bsonType: 'int'
+      }
+    }
+  }
+}
+
+//user
+
+{
+  $jsonSchema: {
+    required: [
+      'nickname',
+      'account',
+      'name',
+      'description',
+      'phone',
+      'address',
+      'comentario'
+    ],
+    properties: {
+      nickname: {
+        bsonType: 'string'
+      },
+      account: {
+        bsonType: 'string',
+        pattern: '^@[^@]*$'
+      },
+      name: {
+        bsonType: 'string',
+        pattern: '^[\\p{L}\\s]+$'
+      },
+      description: {
+        bsonType: 'string'
+      },
+      phone: {
+        bsonType: 'array',
+        items: {
+          bsonType: 'double',
+          pattern: '^[+0-9]+$'
+        }
+      },
+      address: {
+        bsonType: 'array',
+        items: {
+          bsonType: 'object',
+          required: [
+            'street',
+            'number',
+            'city',
+            'postal_code'
+          ],
+          additionalProperties: false,
+          properties: {
+            street: {
+              bsonType: 'string',
+              pattern: '^[\\p{L}\\s]+$'
+            },
+            number: {
+              bsonType: 'string',
+              pattern: '^[+0-9]+$'
+            },
+            city: {
+              bsonType: 'string',
+              pattern: '^[\\p{L}\\s]+$'
+            },
+            postal_code: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'string',
+                pattern: '^[+0-9]+$'
+              }
+            }
+          }
+        }
+      },
+      comentario: {
+        bsonType: 'array',
+        items: {
+          bsonType: 'object',
+          required: [
+            'id_noticia',
+            'date',
+            'body'
+          ],
+          additionalProperties: false,
+          properties: {
+            id_noticia: {
+              bsonType: 'int'
+            },
+            date: {
+              bsonType: 'string'
+            },
+            body: {
+              bsonType: 'string'
+            }
+          }
+        }
+      }
+    }
+  }
+}

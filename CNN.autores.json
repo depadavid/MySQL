@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "66a29588bc8100e92f045ea8"
+  },
+  "nombre": "Juan Pérez",
+  "nombre_usuario": "juanperez",
+  "cuenta_twitter": "@juanperez",
+  "descripcion": "Periodista con 10 años de experiencia en noticias internacionales.",
+  "direccion_postal": {
+    "calle": "Calle Falsa",
+    "numero": "123",
+    "puerta": "A",
+    "codigo_postal": "28080",
+    "ciudad": "Madrid"
+  },
+  "telefonos": [
+    "+34123456789",
+    "+34987654321"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a29588bc8100e92f045ea9"
+  },
+  "nombre": "María López",
+  "nombre_usuario": "marialopez",
+  "cuenta_twitter": "@marialopez",
+  "descripcion": "Editora de noticias políticas y sociales.",
+  "direccion_postal": {
+    "calle": "Avenida Siempre Viva",
+    "numero": "742",
+    "puerta": "B",
+    "codigo_postal": "08080",
+    "ciudad": "Barcelona"
+  },
+  "telefonos": [
+    "+34912345678"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a29588bc8100e92f045eaa"
+  },
+  "nombre": "Carlos García",
+  "nombre_usuario": "carlosgarcia",
+  "cuenta_twitter": "@carlosgarcia",
+  "descripcion": "Reportero especializado en economía y finanzas.",
+  "direccion_postal": {
+    "calle": "Gran Vía",
+    "numero": "456",
+    "puerta": "C",
+    "codigo_postal": "28013",
+    "ciudad": "Madrid"
+  },
+  "telefonos": [
+    "+34987654321"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a29588bc8100e92f045eab"
+  },
+  "nombre": "Ana Martínez",
+  "nombre_usuario": "anamartinez",
+  "cuenta_twitter": "@anamartinez",
+  "descripcion": "Corresponsal en temas de tecnología y ciencia.",
+  "direccion_postal": {
+    "calle": "Paseo de la Castellana",
+    "numero": "789",
+    "puerta": "D",
+    "codigo_postal": "28046",
+    "ciudad": "Madrid"
+  },
+  "telefonos": [
+    "+34911223344",
+    "+34999887766"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a29588bc8100e92f045eac"
+  },
+  "nombre": "Luis Fernández",
+  "nombre_usuario": "luisfernandez",
+  "cuenta_twitter": "@luisfernandez",
+  "descripcion": "Analista de deportes con enfoque en fútbol y baloncesto.",
+  "direccion_postal": {
+    "calle": "Calle Mayor",
+    "numero": "101",
+    "puerta": "E",
+    "codigo_postal": "28012",
+    "ciudad": "Madrid"
+  },
+  "telefonos": [
+    "+34912349876"
+  ]
+}]

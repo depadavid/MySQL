@@ -1,0 +1,75 @@
+[{
+  "_id": {
+    "$oid": "66a295dabc8100e92f045eb2"
+  },
+  "noticia_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4567"
+  },
+  "autor_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4570"
+  },
+  "comentario": "Excelente análisis sobre la recuperación económica. Muy informativo.",
+  "fecha_comentario": {
+    "$date": "2024-07-20T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a295dabc8100e92f045eb3"
+  },
+  "noticia_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4568"
+  },
+  "autor_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4569"
+  },
+  "comentario": "Las nuevas tecnologías realmente están cambiando la industria. Gran artículo.",
+  "fecha_comentario": {
+    "$date": "2024-07-21T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a295dabc8100e92f045eb4"
+  },
+  "noticia_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4569"
+  },
+  "autor_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4567"
+  },
+  "comentario": "Interesante análisis de los candidatos presidenciales. Muy detallado.",
+  "fecha_comentario": {
+    "$date": "2024-07-22T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a295dabc8100e92f045eb5"
+  },
+  "noticia_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4570"
+  },
+  "autor_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4568"
+  },
+  "comentario": "Los descubrimientos científicos mencionados son realmente impresionantes.",
+  "fecha_comentario": {
+    "$date": "2024-07-23T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a295dabc8100e92f045eb6"
+  },
+  "noticia_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4571"
+  },
+  "autor_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4571"
+  },
+  "comentario": "Es preocupante el impacto del cambio climático en la biodiversidad. Buen artículo.",
+  "fecha_comentario": {
+    "$date": "2024-07-24T19:00:00.000Z"
+  }
+}]

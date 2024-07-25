@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "66a295b5bc8100e92f045ead"
+  },
+  "titulo": "La economía global se recupera tras la pandemia",
+  "cuerpo": "La economía mundial muestra signos de recuperación tras la pandemia de COVID-19, con un crecimiento del PIB en varios países.",
+  "fecha_publicacion": {
+    "$date": "2024-07-20T10:00:00.000Z"
+  },
+  "autor_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4567"
+  },
+  "tags": [
+    "economía",
+    "COVID-19",
+    "recuperación"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a295b5bc8100e92f045eae"
+  },
+  "titulo": "Nuevas tecnologías revolucionan la industria",
+  "cuerpo": "Las innovaciones tecnológicas están transformando la industria manufacturera, mejorando la eficiencia y reduciendo costos.",
+  "fecha_publicacion": {
+    "$date": "2024-07-21T12:00:00.000Z"
+  },
+  "autor_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4568"
+  },
+  "tags": [
+    "tecnología",
+    "industria",
+    "innovación"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a295b5bc8100e92f045eaf"
+  },
+  "titulo": "Elecciones presidenciales: un análisis detallado",
+  "cuerpo": "Un análisis exhaustivo de las próximas elecciones presidenciales, incluyendo perfiles de los candidatos y sus propuestas.",
+  "fecha_publicacion": {
+    "$date": "2024-07-22T14:00:00.000Z"
+  },
+  "autor_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4569"
+  },
+  "tags": [
+    "elecciones",
+    "política",
+    "análisis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a295b5bc8100e92f045eb0"
+  },
+  "titulo": "Descubrimientos científicos que cambiarán el mundo",
+  "cuerpo": "Los últimos descubrimientos en el campo de la ciencia prometen revolucionar nuestra comprensión del universo y mejorar la calidad de vida.",
+  "fecha_publicacion": {
+    "$date": "2024-07-23T16:00:00.000Z"
+  },
+  "autor_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4570"
+  },
+  "tags": [
+    "ciencia",
+    "descubrimientos",
+    "innovación"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a295b5bc8100e92f045eb1"
+  },
+  "titulo": "El impacto del cambio climático en la biodiversidad",
+  "cuerpo": "El cambio climático está teniendo efectos devastadores en la biodiversidad global, con muchas especies en peligro de extinción.",
+  "fecha_publicacion": {
+    "$date": "2024-07-24T18:00:00.000Z"
+  },
+  "autor_id": {
+    "$oid": "60c72b2f9b1e8b5a5f8b4571"
+  },
+  "tags": [
+    "cambio climático",
+    "biodiversidad",
+    "medio ambiente"
+  ]
+}]
